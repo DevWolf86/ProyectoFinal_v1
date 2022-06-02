@@ -39,9 +39,11 @@
             this.CmRol = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
             this.Nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Apellido = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Rol = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Editar = new System.Windows.Forms.DataGridViewLinkColumn();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.GrdUsuarios)).BeginInit();
@@ -73,10 +75,11 @@
             this.GrdUsuarios.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Nombre,
             this.Apellido,
-            this.Rol});
+            this.Rol,
+            this.Editar});
             this.GrdUsuarios.Location = new System.Drawing.Point(9, 17);
             this.GrdUsuarios.Name = "GrdUsuarios";
-            this.GrdUsuarios.Size = new System.Drawing.Size(745, 291);
+            this.GrdUsuarios.Size = new System.Drawing.Size(469, 291);
             this.GrdUsuarios.TabIndex = 0;
             this.GrdUsuarios.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.GrdUsuarios_CellContentClick);
             // 
@@ -149,6 +152,15 @@
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(246, 86);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(75, 23);
+            this.button3.TabIndex = 9;
+            this.button3.Text = "button3";
+            this.button3.UseVisualStyleBackColor = true;
+            // 
             // Nombre
             // 
             this.Nombre.HeaderText = "Nombre";
@@ -164,11 +176,19 @@
             this.Rol.HeaderText = "Rol";
             this.Rol.Name = "Rol";
             // 
+            // Editar
+            // 
+            this.Editar.HeaderText = "Editar";
+            this.Editar.Name = "Editar";
+            this.Editar.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.Editar.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(528, 512);
+            this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.CmRol);
@@ -202,9 +222,11 @@
         private System.Windows.Forms.ComboBox CmRol;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button3;
         private System.Windows.Forms.DataGridViewTextBoxColumn Nombre;
         private System.Windows.Forms.DataGridViewTextBoxColumn Apellido;
         private System.Windows.Forms.DataGridViewTextBoxColumn Rol;
+        private System.Windows.Forms.DataGridViewLinkColumn Editar;
     }
 }
 
