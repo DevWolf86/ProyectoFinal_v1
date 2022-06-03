@@ -14,6 +14,11 @@ namespace ProyectoFinal_v1
     public partial class Form1 : Form
     {
         private int n = 0;
+
+        // Conexion a oracle
+        OracleConnection ora = new OracleConnection(@"uid=Adminp;password=pwd2022");
+        
+
         public Form1()
         {
             InitializeComponent();
@@ -42,13 +47,7 @@ namespace ProyectoFinal_v1
             CmRol.Items.Add("Coordinador");
             CmRol.Items.Add("Tecnico");
             CmRol.Items.Add("Soporte");
-            CmRol.Items.Add("Usuario");
-
-            // Conexion a oracle
-
-            //OracleConnection ora = new OracleConnection();
-            //ora.Open();
-            //ora.Close();
+            CmRol.Items.Add("Usuario");           
 
         }
 
