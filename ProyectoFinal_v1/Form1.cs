@@ -71,5 +71,11 @@ namespace ProyectoFinal_v1
                 TxtApellido.Text = (string)GrdUsuarios.Rows[n].Cells[1].Value;
             }
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Productos productos = new Productos();
+            productos.ShowDialog();
+        }
     }
 }

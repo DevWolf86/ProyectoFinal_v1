@@ -63,9 +63,59 @@ namespace ProyectoFinal_v1.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _159160 {
+            get {
+                object obj = ResourceManager.GetObject("159160", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _99815 {
             get {
                 object obj = ResourceManager.GetObject("99815", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap cI3gfl {
+            get {
+                object obj = ResourceManager.GetObject("cI3gfl", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap geometric_landscape_mountains_8k_hd_1366x768 {
+            get {
+                object obj = ResourceManager.GetObject("geometric-landscape-mountains-8k-hd-1366x768", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap wallpaperbetter_com_800x600 {
+            get {
+                object obj = ResourceManager.GetObject("wallpaperbetter.com_800x600", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap windows_inc_minimalism_4k_nc_1366x768 {
+            get {
+                object obj = ResourceManager.GetObject("windows-inc-minimalism-4k-nc-1366x768", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

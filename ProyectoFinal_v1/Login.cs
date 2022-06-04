@@ -7,14 +7,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Oracle.DataAccess.Client;
 
 namespace ProyectoFinal_v1
 {
     public partial class Login : Form
     {
         // Conexion a oracle
-        OracleConnection ora = new OracleConnection(@"uid=Adminp;password=pwd2022");
+       // OracleConnection ora = new OracleConnection(@"uid=Adminp;password=pwd2022");
 
         public Login()
         {
@@ -31,11 +30,27 @@ namespace ProyectoFinal_v1
             string name = TxtUser.Text;
             string contrasena = TxtPass.Text;
 
-            ora.Open();
-            OracleCommand cmd = new OracleCommand("select usuario, contrasena from usuarios where usuario = (" + name + ") and contrasena = (" + contrasena +");", ora);
-            cmd.ExecuteNonQuery();
-            MessageBox.Show("Bienvenido");
-            ora.Close();
+            //ora.Open();
+            //OracleCommand cmd = new OracleCommand("select usuario, contrasena from usuarios where usuario = (" + name + ") and contrasena = (" + contrasena +");", ora);
+            //cmd.ExecuteNonQuery();
+            //MessageBox.Show("Bienvenido");
+            //ora.Close();
+
+            if (name == "Admin" & contrasena == "123456")
+            {
+                MessageBox.Show("Bienvenido Administrador");
+
+                Form1 form1 = new Form1();
+                form1.ShowDialog();
+            }
+            else
+            {
+                MessageBox.Show("Bienvenido Usuario");
+
+                Listado listado = new Listado();
+                listado.ShowDialog();
+
+            }
         }
     }
 }
